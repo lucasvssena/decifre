@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Inicializa o jogo
 function init() {
-	fetch("/assets/data/words.json")
+	fetch("assets/data/words.json")
 		.then((response) => response.json())
 		.then((data) => {
 			const words = data;

@@ -1,82 +1,82 @@
 [
-  {
-      "word": "ABACAXI",
-      "hint": "Fruta tropical com coroa"
-  },
-  {
-      "word": "ELEFANTE",
-      "hint": "O maior mamífero terrestre"
-  },
-  {
-      "word": "COMPUTADOR",
-      "hint": "Máquina usada para processar informações"
-  },
-  {
-      "word": "OCEANO",
-      "hint": "Corpo de água que cobre a maior parte do planeta"
-  },
-  {
-      "word": "DESERTO",
-      "hint": "Lugar seco com pouca chuva e muitas areias"
-  },
-  {
-      "word": "AVIAO",
-      "hint": "Meio de transporte que voa"
-  },
-  {
-      "word": "CANGURU",
-      "hint": "Animal que salta e carrega seus filhotes em uma bolsa"
-  },
-  {
-      "word": "ARCOIRIS",
-      "hint": "Fenômeno colorido visto após a chuva"
-  },
-  {
-      "word": "BIBLIOTECA",
-      "hint": "Local onde se encontram muitos livros"
-  },
-  {
-      "word": "GIRAFA",
-      "hint": "Animal conhecido pelo seu longo pescoço"
-  },
-  {
-      "word": "PIRAMIDE",
-      "hint": "Construção antiga do Egito"
-  },
-  {
-      "word": "TELEFONE",
-      "hint": "Aparelho usado para comunicação à distância"
-  },
-  {
-      "word": "VULCAO",
-      "hint": "Montanha que expele lava"
-  },
-  {
-      "word": "ZEBRA",
-      "hint": "Animal com listras pretas e brancas"
-  },
-  {
-      "word": "LANTERNA",
-      "hint": "Objeto que emite luz portátil"
-  },
-  {
-      "word": "MICROFONE",
-      "hint": "Dispositivo usado para amplificar a voz"
-  },
-  {
-      "word": "RELAMPAGO",
-      "hint": "Fenômeno atmosférico durante tempestades"
-  },
-  {
-      "word": "CAVALO",
-      "hint": "Animal frequentemente usado como meio de transporte no passado"
-  },
-  {
-      "word": "PLANETA",
-      "hint": "Corpo celeste que orbita uma estrela"
-  },
-  {
-      "word": "TARTARUGA",
-      "hint": "Animal com casco que vive tanto na água quanto em terra"
-  }
+	{
+		"word": "ABACAXI",
+		"hint": "Fruta tropical com coroa"
+	},
+	{
+		"word": "ELEFANTE",
+		"hint": "O maior mamífero terrestre"
+	},
+	{
+		"word": "COMPUTADOR",
+		"hint": "Máquina usada para processar informações"
+	},
+	{
+		"word": "OCEANO",
+		"hint": "Corpo de água que cobre a maior parte do planeta"
+	},
+	{
+		"word": "DESERTO",
+		"hint": "Lugar seco com pouca chuva e muitas areias"
+	},
+	{
+		"word": "AVIAO",
+		"hint": "Meio de transporte que voa"
+	},
+	{
+		"word": "CANGURU",
+		"hint": "Animal que salta e carrega seus filhotes em uma bolsa"
+	},
+	{
+		"word": "ARCOIRIS",
+		"hint": "Fenômeno colorido visto após a chuva"
+	},
+	{
+		"word": "BIBLIOTECA",
+		"hint": "Local onde se encontram muitos livros"
+	},
+	{
+		"word": "GIRAFA",
+		"hint": "Animal conhecido pelo seu longo pescoço"
+	},
+	{
+		"word": "PIRAMIDE",
+		"hint": "Construção antiga do Egito"
+	},
+	{
+		"word": "TELEFONE",
+		"hint": "Aparelho usado para comunicação à distância"
+	},
+	{
+		"word": "VULCAO",
+		"hint": "Montanha que expele lava"
+	},
+	{
+		"word": "ZEBRA",
+		"hint": "Animal com listras pretas e brancas"
+	},
+	{
+		"word": "LANTERNA",
+		"hint": "Objeto que emite luz portátil"
+	},
+	{
+		"word": "MICROFONE",
+		"hint": "Dispositivo usado para amplificar a voz"
+	},
+	{
+		"word": "RELAMPAGO",
+		"hint": "Fenômeno atmosférico durante tempestades"
+	},
+	{
+		"word": "CAVALO",
+		"hint": "Animal frequentemente usado como meio de transporte no passado"
+	},
+	{
+		"word": "PLANETA",
+		"hint": "Corpo celeste que orbita uma estrela"
+	},
+	{
+		"word": "TARTARUGA",
+		"hint": "Animal com casco que vive tanto na água quanto em terra"
+	}
 ]
