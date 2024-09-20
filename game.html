@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Decifre</title>
+		<link
+			href="assets/lib/bootstrap-5.2.3/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link href="assets/style/game.css" rel="stylesheet" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.png" />
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+	</head>
+	<body>
+		<!-- Seção do Jogo -->
+		<section id="gameSection" class="text-center py-5">
+			<div class="container">
+				<!-- Título -->
+				<h2 class="mb-4">Decifre a Palavra</h2>
+				<!-- Dica -->
+				<p id="hint" class="mb-4">
+					Dica:
+					<!-- Dica será preenchida dinamicamente -->
+				</p>
+				<!-- Display da Palavra -->
+				<div id="wordDisplay" class="mb-4">
+					<!-- Quadradinhos para as letras da palavra serão preenchidos dinamicamente -->
+				</div>
+
+				<!-- Feedback -->
+				<div id="feedback" class="my-3"></div>
+				<div id="btn-container" class="my-3"></div>
+
+				<!-- Botão Voltar -->
+				<a
+					class="btn neon-button position-absolute top-0 end-0 mt-3 me-3"
+					href="/index.html"
+				>
+					<i class="bi bi-x"></i>
+				</a>
+			</div>
+
+			<!-- Aside para exibir o histórico de tentativas -->
+			<aside id="attemptsAside">
+				<h4>Histórico de Tentativas</h4>
+				<div id="lettersGuessed" class="history-list"></div>
+			</aside>
+		</section>
+
+		<canvas id="confettiCanvas"></canvas>
+		<!-- JavaScript -->
+		<script src="assets/lib/bootstrap-5.2.3/bootstrap.min.js"></script>
+		<script src="assets/script/game.js"></script>
+	</body>
+</html>

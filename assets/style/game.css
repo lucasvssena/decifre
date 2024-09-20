@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+#hero {
+	background-image: url("../images/bg/background.webp");
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+
+.game-title {
+	font-family: "Baloo 2", sans-serif;
+	font-size: 6rem;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	color: #fff;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	animation: glow 2s ease-in-out infinite alternate;
+}
+
+.letter {
+	display: inline-block;
+	transform-origin: bottom center;
+}
+
+.tilt-right {
+	transform: rotate(5deg);
+}
+
+.tilt-left {
+	transform: rotate(-5deg);
+}
+
+.letter:nth-child(1) {
+	color: #ffb6c1;
+} /* Rosa pastel */
+.letter:nth-child(2) {
+	color: #ffd700;
+} /* Amarelo pastel */
+.letter:nth-child(3) {
+	color: #87cefa;
+} /* Azul pastel */
+.letter:nth-child(4) {
+	color: #ff69b4;
+} /* Rosa forte */
+.letter:nth-child(5) {
+	color: #98fb98;
+} /* Verde pastel */
+.letter:nth-child(6) {
+	color: #ffa07a;
+} /* Laranja pastel */
+.letter:nth-child(7) {
+	color: #ba55d3;
+} /* Roxo pastel */
+
+.hero-description {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 20px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo para o botão com efeito neon/glow e bordas arredondadas */
+.neon-button {
+	background: linear-gradient(145deg, #ff0066, #ff6600);
+	border: none;
+	color: white;
+	font-size: 1.2em;
+	border-radius: 100%;
+	box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+	transition: 0.3s;
+	width: 40px;
+	height: 40px;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.neon-button:hover {
+	color: white;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 40px rgba(255, 0, 0, 0.8);
+}
+
+.hero-content {
+	position: relative;
+	z-index: 10;
+	height: 100%;
+	align-items: center;
+}
+
+.footer {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+/* Fundo e estrutura geral */
+#gameSection {
+	background-image: url("../images/bg/background.webp");
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	position: relative;
+	overflow: clip;
+}
+
+#gameSection::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+
+#gameSection .container {
+	z-index: 2;
+	padding: 20px;
+	margin-left: 200px;
+}
+
+/* Estilo do Título */
+h2 {
+	font-family: "Baloo 2", sans-serif;
+	font-size: 4rem;
+	margin-bottom: 20px;
+	color: #87cefa;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Dica */
+#hint {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #ffd700; /* Amarelo pastel */
+	margin-bottom: 30px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Quadradinhos das letras */
+#wordDisplay {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+.letter-square {
+	width: 60px;
+	height: 60px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	font-size: 2rem;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	transition: transform 0.3s ease;
+}
+
+.letter-square.filled {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #000;
+}
+
+/* Inclinação dos quadradinhos */
+.letter-square:nth-child(odd) {
+	transform: rotate(-5deg);
+}
+
+.letter-square:nth-child(even) {
+	transform: rotate(5deg);
+}
+
+/* Histórico de tentativas */
+#lettersGuessed {
+	margin-top: 20px;
+	font-size: 1.2rem;
+	max-height: 200px;
+	overflow-y: auto;
+	margin-bottom: 20px;
+}
+
+#lettersGuessed ul {
+	list-style-type: none;
+	padding: 0;
+	color: #ffd700;
+}
+
+#lettersGuessed li {
+	display: inline-block;
+	margin-right: 10px;
+	font-weight: bold;
+	color: #87cefa; /* Azul pastel */
+}
+
+/* Feedback */
+#feedback {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #ff69b4; /* Rosa forte */
+	margin-top: 20px;
+}
+
+#btn-container {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+#attemptsAside {
+	position: absolute;
+	z-index: 10;
+	left: 20px;
+	top: 20px;
+	bottom: 20px;
+	width: 200px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	overflow-y: auto;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#attemptsAside h4 {
+	margin-bottom: 10px;
+}
+
+#attemptsAside p {
+	font-size: 1rem;
+	margin: 5px 0;
+	color: #ffb6c1;
+}
+
+.letter-destroy {
+	display: inline-block;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	opacity: 1;
+}
+
+.letter-destroy.fade-out {
+	opacity: 0;
+	transform: scale(0.8);
+}
+
+/* Confetes */
+#confettiCanvas {
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	pointer-events: none;
+	z-index: 15;
+}
+
+@media (max-width: 768px) {
+	h2 {
+		font-size: 3rem;
+	}
+
+	.letter-square {
+		width: 50px;
+		height: 50px;
+		font-size: 1.5rem;
+	}
+
+	#hint {
+		font-size: 1.3rem;
+	}
+
+	#feedback {
+		font-size: 1.2rem;
+	}
+
+	.btn {
+		font-size: 1rem;
+		padding: 8px 16px;
+	}
+
+	#attemptsAside {
+		position: relative;
+		width: 100%;
+		left: 0;
+		top: auto;
+		bottom: auto;
+		margin-top: 20px;
+	}
+	#gameSection .container {
+		margin-left: 0;
+		padding: 10px;
+	}
+
+	#wordDisplay {
+		gap: 10px;
+	}
+
+	#lettersGuessed ul {
+		padding-left: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	h2 {
+		font-size: 2.5rem;
+	}
+
+	.letter-square {
+		width: 40px;
+		height: 40px;
+		font-size: 1.2rem;
+	}
+
+	#hint {
+		font-size: 1.1rem;
+	}
+
+	#feedback {
+		font-size: 1rem;
+	}
+
+	#attemptsAside {
+		padding: 10px;
+	}
+}
+
+@keyframes destroy {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.3) rotate(180deg);
+		opacity: 0;
+	}
+}
+
+@keyframes pulseEffect {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #ff9c9c, 0 0 30px #ff9c9c,
+			0 0 40px #ff9c9c;
+	}
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #ffd700, 0 0 40px #ffb6c1,
+			0 0 50px #ffb6c1;
+	}
+}
